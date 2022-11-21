@@ -1,31 +1,139 @@
-#title {
-  font-size: 25px;
-}
-
-.nav-link {
-  text-align: right;
-}
-
 body {
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+  background-color: #171717;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .name {
-  color: white;
-  font-size: 50px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  color: #ece8e1;
+  font-size: 630px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  padding: 0px;
+}
+
+.name:hover {
+   background: linear-gradient(-30deg, #bd02b3, #dc143b, #bd02b3);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 800px;
+   top: 0%;
+}
+
+.nav {
+  color: #ece8e1;
+  text-decoration: none;
+  font-size: 65px;
+  padding: 25px;
+  text-align: right;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  color: #ece8e1;
+  padding: 25px;
+}
+
+a:hover {
+  color: #dc143b;
+}
+
+a:active {
+  color: 000;
+}
+
+.title {
+  color: #ece8e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+}
+
+.bio {
+  color:#ece8e1;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.skills {
+    color: #ece8e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+.container{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, 90%);
+  width: 60%;
+  font-size: 45px;
+  color: #ece8e1;
+  padding: 20px;
+}
+.skill-container{
+  width: 100%;
+  background: #ddd;
+}
+.skill{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.html{
+  width: 100%;
+  background-color: #4CAF50;
+}
+.css{
+  width: 100%;
+  background-color: #2196F3;
+}
+.js{
+  width: 85%;
+  background-color: #F44336;
+}
+@media only screen and (max-width: 760px) {
+  .container{
+    width: 96%;
+  }
 }
 
-span {
-  color: #dc143b;
+.socials {
+  position: relative;
+  top: 1rem;
+  text-align: center;
+}
+
+.page-footer {
+  position: relative;
+  top: 70em;
+  color: #ece8e1;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__item {
+  background-color: #444444;
+  color: #EDEDED;
+  padding: 10px;
 }
