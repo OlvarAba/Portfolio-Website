@@ -1,215 +1,75 @@
+
 body {
-  background-color: #171717;
-  font-family: 'Bebas Neue', cursive;
-  margin: 0;
-  overflow: hidden; 
+  background-color: #1e1e1e;
+  
 }
 
-.nameIndex {
-  color: #ece8e1;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  flex-direction: column;
+h1 {
+  color: #f2f2f2;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 300px;
+  position: relative;
+  top: 200px;
+  left: 20px;
 }
 
-.stack {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.stack span {
-  font-weight: bold;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  font-size: 40vw;
-  --stack-height: calc(100% / var(--stacks) - 1px);
-  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-  --clip-top: calc(var(--stack-height) * var(--index));
-  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-  animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
-}
-
-.stack span:nth-child(odd) {
-  --glitch-translate: 8px;
-}
-
-.stack span:nth-child(even) {
-  --glitch-translate: -8px;
-}
-
-@keyframes stack {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-  }
-
-  ;
-
-  60% {
-    opacity: 0.5;
-    transform: translateX(50%);
-  }
-
-  80% {
-    transform: none;
-    opacity: 1;
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-  }
-
-  100% {
-    text-shadow: none;
-  }
-}
-
-@keyframes glitch {
-  0% {
-    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
-    transform: translate(var(--glitch-translate));
-  }
-
-  2% {
-    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
-  }
-
-  4%,
-  100% {
-    text-shadow: none;
-    transform: none;
-  }
+h2 {
+  color: #dc143b;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 45px;
+  position: relative;
+  bottom: 790px;
+  left: 100px;
 }
 
 
-
-
-
-.nav {
-  color: #ece8e1;
-  text-decoration: none;
-  font-size: 65px;
-  padding: 25px;
-  text-align: right;
+.nav ul {
+list-style-type: none;
 }
 
 li {
-  list-style: none;
-  display: inline-block;
-  cursor: pointer;
+  display: block;
+  position: relative;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 60px;
+  padding: 12px;
+  float: right;
+  bottom: 100px;
+  right: 50px;
 }
 
-
-a {
+li a {
+  color: #f2f2f2;
   text-decoration: none;
-  color: #ece8e1;
 }
 
-a:hover {
+li a:hover {
   color: #dc143b;
 }
 
-a:active {
-  color: 000;
-}
-
-
-
-.title {
-  color: #ece8e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 65px;
-}
-
-.bio {
-  color:#ece8e1;
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-}
-
-.skills {
-    color: #ece8e1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 65px;
-}
-
-.container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 90%);
-  width: 60%;
-  font-size: 45px;
-  color: #ece8e1;
-  padding: 20px;
-}
-.skill-container{
-  width: 100%;
-  background: #ddd;
-}
-.skill{
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-.html{
-  width: 100%;
-  background-color: #4CAF50;
-}
-.css{
-  width: 100%;
-  background-color: #2196F3;
-}
-.js{
-  width: 85%;
-  background-color: #F44336;
-}
-@media only screen and (max-width: 760px) {
-  .container{
-    width: 96%;
-  }
-}
-
-.socials {
-  position: relative;
-  top: 1rem;
-  text-align: center;
-}
-
-.page-footer {
-  position: relative;
-  top: 70em;
-  color: #ece8e1;
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.grid__item {
+.Red {
+  height: 150px;
+  width: 150px;
   background-color: #dc143b;
-  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
-.grid__item > a {
-  color: #000;
-  padding: 10px;
+.Purple {
+  height: 150px;
+  width: 150px;
+  background-color: #d54beb;
+  position: absolute;
+  bottom: 100px;
+  right: 450px;
 }
 
-.grid__item > a:hover {
-  color: #fff;
+.backgroundCat{ 
+  position: absolute;
+  top: 250px;
+  right: 550px;
+  z-index: -1;
 }
+
 
